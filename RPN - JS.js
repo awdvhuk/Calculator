@@ -76,7 +76,10 @@ $(document).ready(function(){
         screen += operation;
         var splitInput = input.split('');
         if ( localValue == '0' && input == '0' ) { return; }
-        if ( localValue != '.' && localValue != '0' && input == '0' ) { input = ''; }
+        if ( localValue != '.' &&
+            localValue != '0' &&
+            input == '0'
+        ) { input = ''; }
         if ( localValue == '.' ) {
             if ( splitInput[0] == undefined ) { input = '0'; }
             for ( let i = 0; i < splitInput.length; i++ ) {
@@ -100,7 +103,11 @@ $(document).ready(function(){
             input = '';
             return;
         }
-        if ( input == '' && operation == '' && bracket != ' ) ' || operation == '√' ) { return; }
+        if ( input == '' &&
+            operation == '' &&
+            bracket != ' ) ' ||
+            operation == '√'
+        ) { return; }
         if ( input != '' ) { addToOutput(input); }
         screen += input;
         operation = operTime;
