@@ -3,6 +3,8 @@ body {
     font-size: 40px;
     background: url(http://i.playground.ru/i/52/56/83/10/pix/image.jpg) no-repeat;
     background-size: 100%;
+    position: relative;
+    text-align: center;
 }
 
 header {
@@ -16,14 +18,11 @@ header {
 }
 
 .links {
-    height: 45px;
-    margin-top: 18%;
-    line-height: 12px;
-    vertical-align: middle;
-    text-align: center;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-top: 14%;
 }
 
 a {
@@ -36,18 +35,23 @@ a {
 }
 
 .classic {
-    margin-right: 340px;
+    position: absolute;
+    right: 90px;
     width: 259px;
     padding: 40px 10px 50px 10px;
-    background-color: rgba(72, 142, 247, 0.89);
-    border: 2px solid rgba(84, 151, 252, 0.801);
+    background-color: rgba(72, 142, 247, 0.300);
+    box-shadow: 0 0 40px 30px rgba(72, 142, 247, 0.300);
+    border: none;
 }
 
 .rpn {
+    position: absolute;
+    left: 90px;
     width: 259px;
-    padding: 28px 10px 62px 10px;
-    background-color: rgba(199, 20, 20, 0.89);
-    border: 2px solid rgba(233, 9, 9, 0.801);
+    padding: 20px 10px 11px 10px;
+    border: none;
+    background-color: rgba(199, 20, 20, 0.300);
+    box-shadow: 0 0 40px 30px rgba(199, 20, 20, 0.300);
 }
 
 .rpn p {
@@ -58,24 +62,18 @@ a {
 
 .classic:hover {
     width: 263px;
-    border: none;
     font-size: 41px;
-    background-color: rgba(72, 142, 247, 0.582);
-    box-shadow: 10px 10px 10px rgba(172, 205, 255, 0.582),
-                -10px 10px 10px rgba(172, 205, 255, 0.582),
-                10px -10px 10px rgba(172, 205, 255, 0.582),
-                -10px -10px 10px rgba(172, 205, 255, 0.582);
+    background-color: rgba(72, 142, 247, 0.600);
+    box-shadow: 0 0 40px 30px rgba(72, 142, 247, 0.600);
+    border: none;
 }
 
 .rpn:hover {
     width: 263px;
-    border: none;
     font-size: 43px;
-    background-color: rgba(199, 20, 20, 0.582);
-    box-shadow: 15px 15px 10px rgba(214, 56, 56, 0.582),
-                -15px 15px 10px rgba(214, 56, 56, 0.582),
-                15px -15px 10px rgba(214, 56, 56, 0.582),
-                -15px -15px 10px rgba(214, 56, 56, 0.582);
+    border: none;
+    background-color: rgba(199, 20, 20, 0.600);
+    box-shadow: 0 0 40px 30px rgba(199, 20, 20, 0.600);
 }
 
 .classic:active {
